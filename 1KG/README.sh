@@ -7,34 +7,34 @@ main() {
 plinkbindir='/data/workspace/richard/software/plink-1.9-x86_64_20191028'
 
 ## 1, Download the files as VCF.gz (and tab-indices)
-#get1kgvcf;
+get1kgvcf;
 
 ## 2, Download 1000 Genomes PED file
-#get1kgped;
+get1kgped;
 
 ## 3, Download the GRCh37 / hg19 reference genome
-#getgrch37;
+getgrch37;
 
 ## 4, Convert the 1000 Genomes files to BCF
-#1kg2bcf;
+1kg2bcf;
 
 ## 4a, Convert the zika data to BCF
-#zika2bcf;
+zika2bcf;
 
 ## 5, Convert the BCF files to PLINK format
-#bcf2plink;
+bcf2plink;
 
 ## 5a, Convert the BCF files to PLINK format
-#zikabcf2plink;
+zikabcf2plink;
 
 ## 6, Exclude variants not on the coding strand
 # NB - This step is only for microarray studies where the probes may only target one strand or the other (sense or non-sense)
 
 ## 7, Prune variants from each chromosome
-#prune;
+prune;
 
 ## 7a, Prune variants from each chromosome
-#zikaprune;
+zikaprune;
 
 ## 8, Get a list of all PLINK files
 linkPlink;
